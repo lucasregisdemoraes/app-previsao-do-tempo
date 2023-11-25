@@ -1,0 +1,102 @@
+body {
+    background-color: #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+body,
+button,
+input {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.container {
+    background-color: #1f2949;
+    color: #fff;
+    max-width: 330px;
+    text-align: center;
+    background-image: url("../images/background.png");
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 10px 50px;
+}
+
+.search {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.search input,
+.search .btn-search {
+    background-color: #0a1435;
+    border-radius: 5px;
+    border: none;
+    opacity: 0.6;
+    transition: opacity 500ms
+}
+
+.search input:hover,
+.search input:focus,
+.search .btn-search:hover,
+.search .btn-search:focus {
+    opacity: 0.9;
+}
+
+/* .search input:focus, */
+
+.search input {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 700;
+    padding: 10px;
+    outline: none;
+    width: 100%;
+}
+
+.search .btn-search {
+    cursor: pointer;
+    padding: 5px 10px;
+    outline: none;
+}
+
+.search .btn-search .search-icon {
+    width: 30px;
+    padding: 6px;
+}
+
+.main-info {
+    margin: 30px;
+}
+
+.main-info h1 {
+    font-size: 18px;
+}
+
+.main-info .temperature {
+    font-size: 68px;
+    margin: 20px 0;
+}
+
+.main-info .condition {
+    font-size: 20px;
+}
+
+.secondary-info {
+    color: #000;
+    background-color: #fff;
+    padding: 20px 30px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.secondary-info .humidity,
+.secondary-info .wind-speed {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
